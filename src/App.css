@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::selection{
+  background: skyblue;
+  color: whitesmoke;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background: whitesmoke;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  width: 500px;
+  height: 50px;
+  background: white;
+  border: none;
+  padding: 0 0 0 15px;
+  margin: 5px 0 0 0;
+  border-bottom: 2px solid transparent;
+}
+input:focus{
+  outline: none;
+  border-bottom: 2px solid skyblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select{
+  width: 500px;
+  height: 50px;
+  background: white;
+  border: none;
+  padding: 0 0 0 15px;
+  margin: 5px 0 0 0;
+}
+select:focus{
+  outline: skyblue;
+}
+
+button{
+  width:300px;
+  height: 30px;
+  margin: 10px 0 0 0;
+  background: white;
+  border: none;
+  box-shadow: 0 0 10px #d8d8d8;
+  cursor: pointer;
+}
+
+.listItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  width: 500px;
+  height: 47px;
+  margin: 5px;
+}
+.listItem h5{
+  padding-left: 12px;
+  font-weight: 100;
+}
+
+.expenseIndicator{
+   display: block;
+   border-right: 4px solid red;
+   height: 47px;
+   width: 100px;
+}
+.incomeIndicator{
+   display: block;
+   border-right: 4px solid green;
+   height: 47px;
+   width: 100px;
 }
